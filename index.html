@@ -6,7 +6,7 @@
     <title>Voyager Fellowship</title>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
     
     <!-- Preload Earth image -->
     <link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/The_Blue_Marble_%28remastered%29.jpg/1200px-The_Blue_Marble_%28remastered%29.jpg">
@@ -156,7 +156,7 @@
             z-index: 1;
         }
 
-        /* Realistic Blue Marble Earth with slow spin */
+        /* Realistic Blue Marble Earth - static, shifted to show Europe */
         .earth {
             position: absolute;
             top: 0;
@@ -165,18 +165,8 @@
             height: 100%;
             border-radius: 50%;
             background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/The_Blue_Marble_%28remastered%29.jpg/1200px-The_Blue_Marble_%28remastered%29.jpg');
-            background-size: cover;
-            background-position: center;
-            animation: spin 300s linear infinite;
-        }
-
-        @keyframes spin {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
+            background-size: 140%;
+            background-position: 40% 20%;
         }
 
         /* Content */
@@ -221,8 +211,8 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            max-width: 520px;
-            padding-bottom: 100px;
+            max-width: 600px;
+            padding-bottom: 60px;
         }
 
         h1 {
@@ -237,7 +227,7 @@
             font-size: 1.02rem;
             line-height: 1.7;
             color: var(--text-secondary);
-            margin-bottom: 50px;
+            margin-bottom: 40px;
         }
 
         .description p {
@@ -245,6 +235,34 @@
         }
 
         .description p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 36px;
+        }
+
+        .section-title {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 12px;
+        }
+
+        .section-content {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: var(--text-secondary);
+        }
+
+        .section-content p {
+            margin-bottom: 0.5em;
+        }
+
+        .section-content p:last-child {
             margin-bottom: 0;
         }
 
@@ -260,6 +278,7 @@
             border-top: 1px solid rgba(255,255,255,0.2);
             width: fit-content;
             transition: color 0.2s;
+            margin-top: 20px;
         }
 
         .cta:hover {
@@ -289,7 +308,7 @@
             }
 
             main {
-                max-width: 450px;
+                max-width: 500px;
             }
         }
 
@@ -335,11 +354,38 @@
             <h1>Three months.<br>Civilizational defense.</h1>
             
             <div class="description">
-                <p>The Voyager Fellowship is a three-month residency for exceptional builders working on the technologies that protect civilization. The first cohort focuses on biosecurity.</p>
+                <p>The Voyager Fellowship is a three-month residency for exceptional builders working on technologies that protect civilization. The first cohort focuses on biosecurity.</p>
                 
-                <p>No PhD required. High agency, fast learning, and a willingness to build what's actually needed.</p>
-                
-                <p>Applications open now. The fellowship formally launches January 2026.</p>
+                <p>This is an experimental cohort. If you make good progress, you're automatically invited to continue into the full program.</p>
+            </div>
+
+            <div class="section">
+                <div class="section-title">What You Get</div>
+                <div class="section-content">
+                    <p>$25k stipend over three months. Office space at BlueDot London alongside other Voyagers. High-velocity access to advisors, technical experts, and funders. Strategic red-teaming and field guidance. Partner matching. Materials and travel budget.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Who We're Looking For</div>
+                <div class="section-content">
+                    <p>Builders who can move fast, test ideas, and pivot when something isn't working. No PhD required.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Process</div>
+                <div class="section-content">
+                    <p>Application → Interview 1 → Interview 2 → Decision</p>
+                    <p>We aim to decide within two weeks.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Questions</div>
+                <div class="section-content">
+                    <p><a href="mailto:prince@bluedot.org" style="color: var(--text-secondary); text-decoration: underline;">prince@bluedot.org</a></p>
+                </div>
             </div>
 
             <a href="https://airtable.com/appkKc02xe9D0le4B/pagaklR6m8J9yUmXh/form" class="cta">
