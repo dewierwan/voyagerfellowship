@@ -145,14 +145,14 @@
             opacity: 0.8;
         }
 
-        /* Earth container */
+        /* Earth container - centered */
         .earth-container {
             position: fixed;
             top: 50%;
             left: 55%;
             transform: translate(-50%, -50%);
-            width: 320px;
-            height: 320px;
+            width: 400px;
+            height: 400px;
             z-index: 1;
         }
 
@@ -212,7 +212,11 @@
             flex-direction: column;
             justify-content: center;
             max-width: 600px;
+            padding: 40px;
             padding-bottom: 60px;
+            background: rgba(3, 3, 6, 0.85);
+            border-radius: 8px;
+            margin: auto 0;
         }
 
         h1 {
@@ -300,11 +304,17 @@
             color: var(--text-secondary);
         }
 
+        @media (max-width: 1200px) {
+            .earth-container {
+                width: 350px;
+                height: 350px;
+            }
+        }
+
         @media (max-width: 900px) {
             .earth-container {
-                width: 240px;
-                height: 240px;
-                left: 65%;
+                width: 300px;
+                height: 300px;
             }
 
             main {
@@ -318,10 +328,13 @@
             }
 
             .earth-container {
-                width: 180px;
-                height: 180px;
-                top: 30%;
-                left: 70%;
+                width: 250px;
+                height: 250px;
+            }
+
+            main {
+                max-width: 100%;
+                padding: 30px;
             }
 
             h1 {
@@ -330,6 +343,29 @@
 
             footer {
                 padding: 30px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .earth-container {
+                width: 200px;
+                height: 200px;
+            }
+
+            main {
+                padding: 24px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 0.8rem;
+            }
+
+            .section-content {
+                font-size: 0.9rem;
             }
         }
     </style>
@@ -362,7 +398,7 @@
             <div class="section">
                 <div class="section-title">What You Get</div>
                 <div class="section-content">
-                    <p>$25k stipend over three months. Office space at BlueDot London alongside other Voyagers. High-velocity access to advisors, technical experts, and funders. Strategic red-teaming and field guidance. Partner matching. Materials and travel budget.</p>
+                    <p>£25k stipend over three months. Office space at BlueDot London alongside other Voyagers. High-velocity access to advisors, technical experts, and funders. Strategic red-teaming and field guidance. Partner matching. Materials and travel budget.</p>
                 </div>
             </div>
 
