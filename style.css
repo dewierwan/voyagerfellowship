@@ -151,7 +151,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .logo {
@@ -179,8 +179,8 @@ main {
     flex-direction: column;
     justify-content: center;
     max-width: 600px;
-    padding: 40px;
-    padding-bottom: 60px;
+    padding: 30px;
+    padding-bottom: 30px;
     background: rgba(3, 3, 6, 0.85);
     border-radius: 8px;
     margin: auto 0;
@@ -190,7 +190,7 @@ h1 {
     font-size: 3.2rem;
     font-weight: 600;
     line-height: 1.1;
-    margin-bottom: 40px;
+    margin-bottom: 28px;
     letter-spacing: -0.02em;
 }
 
@@ -198,7 +198,7 @@ h1 {
     font-size: 1.02rem;
     line-height: 1.7;
     color: var(--text-secondary);
-    margin-bottom: 40px;
+    margin-bottom: 28px;
 }
 
 .description p {
@@ -211,7 +211,7 @@ h1 {
 
 /* Sections */
 .section {
-    margin-bottom: 36px;
+    margin-bottom: 24px;
 }
 
 .section-title {
@@ -245,11 +245,11 @@ h1 {
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
-    padding-top: 20px;
+    padding-top: 16px;
     border-top: 1px solid rgba(255,255,255,0.2);
     width: fit-content;
     transition: color 0.2s;
-    margin-top: 20px;
+    margin-top: 12px;
 }
 
 .cta:hover {
@@ -263,9 +263,10 @@ h1 {
 
 /* Footer */
 footer {
-    position: relative;
+    position: fixed;
+    bottom: 40px;
+    right: 60px;
     z-index: 10;
-    padding: 40px 60px;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.8rem;
     color: var(--text-secondary);
@@ -309,6 +310,9 @@ footer {
     }
 
     footer {
+        position: relative;
+        bottom: auto;
+        right: auto;
         padding: 30px;
     }
 }
@@ -335,4 +339,3 @@ footer {
         font-size: 0.9rem;
     }
 }
-
